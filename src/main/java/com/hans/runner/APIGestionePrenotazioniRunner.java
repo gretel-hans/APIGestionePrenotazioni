@@ -86,7 +86,7 @@ public class APIGestionePrenotazioniRunner implements ApplicationRunner {
 		// PRENOTAZIONE POSTAZIONI
 
 List<PrenotazionePostazione> listaPrenotazioni =new ArrayList<PrenotazionePostazione>();
-listaPrenotazioni.add(new PrenotazionePostazione(utenteService.cercaUtente(14), postazioneService.cercaPostazione(3), LocalDate.of(2023,10,17),LocalDate.of(2023,10,18)));
+listaPrenotazioni.add(new PrenotazionePostazione(utenteService.cercaUtente(3), postazioneService.cercaPostazione(3), LocalDate.of(2023,10,17),LocalDate.of(2023,10,18)));
 listaPrenotazioni.forEach(p->prenotazioneService.salvaOModficaPrenotazionePostazione(p));
 			// prenotazioneService.salvaOModficaPrenotazionePostazione(p);
 		
