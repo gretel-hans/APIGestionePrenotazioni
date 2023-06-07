@@ -69,8 +69,8 @@ public class APIGestionePrenotazioniRunner implements ApplicationRunner {
 			int descrizionePostazione = (int) (Math.random() * 9);
 			int numeroMaxOccupanti = (int) (Math.random() * 60) + 10;
 
-			Postazione p = new Postazione(listaDescrizioni[descrizionePostazione], numeroMaxOccupanti,
-					sceltaTipo[tipoPostazione], edificioService.cercaEdificio(idEdificio));
+			//Postazione p = new Postazione(listaDescrizioni[descrizionePostazione], numeroMaxOccupanti,
+			//		sceltaTipo[tipoPostazione], edificioService.cercaEdificio(idEdificio));
 		  //postazioneService.salvaOModificaPostazione(p);
 		}
 
@@ -86,8 +86,8 @@ public class APIGestionePrenotazioniRunner implements ApplicationRunner {
 		// PRENOTAZIONE POSTAZIONI
 
 List<PrenotazionePostazione> listaPrenotazioni =new ArrayList<PrenotazionePostazione>();
-listaPrenotazioni.add(new PrenotazionePostazione(utenteService.cercaUtente(3), postazioneService.cercaPostazione(3), LocalDate.of(2023,10,17),LocalDate.of(2023,10,18)));
-listaPrenotazioni.forEach(p->prenotazioneService.salvaOModficaPrenotazionePostazione(p));
+//listaPrenotazioni.add(new PrenotazionePostazione(utenteService.cercaUtente(3), postazioneService.cercaPostazione(3), LocalDate.of(2023,10,17),LocalDate.of(2023,10,18)));
+//listaPrenotazioni.forEach(p->prenotazioneService.salvaOModficaPrenotazionePostazione(p));
 			// prenotazioneService.salvaOModficaPrenotazionePostazione(p);
 		
 

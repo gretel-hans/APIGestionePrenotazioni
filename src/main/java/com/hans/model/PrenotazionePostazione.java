@@ -26,10 +26,10 @@ public class PrenotazionePostazione {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@ManyToOne(cascade = CascadeType.MERGE)
+	@ManyToOne(cascade = {CascadeType.MERGE} )
 	private Utente utente;
 	
-	@ManyToOne(cascade = CascadeType.MERGE)
+	@ManyToOne(cascade = {CascadeType.MERGE})
 	private Postazione postazione;
 	
 	@Column(nullable = false, name="data_attuale_prenotazione")

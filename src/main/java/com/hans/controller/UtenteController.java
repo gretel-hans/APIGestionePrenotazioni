@@ -47,7 +47,7 @@ public class UtenteController {
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<String> eliminaUtente(@PathVariable Long id) {
-		return new ResponseEntity(utenteDb.eliminaUtente(id) ,HttpStatus.OK);
+		return new ResponseEntity("Non si possono eliminare gli utenti in quanto legati al registro delle prenotazioni delle postazioni!" ,HttpStatus.BAD_REQUEST);
 	}
 	
 	@PutMapping("/{id}")

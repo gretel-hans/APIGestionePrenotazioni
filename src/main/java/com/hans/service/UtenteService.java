@@ -61,14 +61,6 @@ public class UtenteService {
 			throw new EntityExistsException("ERRORE!! L'utente cercato non esiste!!");
 	}
 	
-	public String eliminaUtente(long id) {
-		if(esisteUtente(id)) {
-		db.deleteById(id);
-		return "Utente con id: "+id+" eliminato dal DB!!";
-		}else
-			throw new EntityExistsException("ERRORE!! L'utente da eliminare non esiste!!");
-	}
-	
 	
 	public List<Utente> cercaTuttiUtenti(){
 		return db.findAll();

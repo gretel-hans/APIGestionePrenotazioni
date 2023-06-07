@@ -27,18 +27,18 @@ public class PrenotazioniController {
 	
 	@GetMapping()
 	public ResponseEntity<List<PrenotazionePostazione>> mostraTuttePrenotazioni() {
-		return ResponseEntity.ok(prenotazioniService.cercaTuttePrenotazioni()) ; 
+		return new ResponseEntity(prenotazioniService.cercaTuttePrenotazioni(), HttpStatus.OK) ; 
 	}
 	
 	@GetMapping("/page")
 	///page?size=2&page=2&sort=name,ASC
 	public ResponseEntity<Page<PrenotazionePostazione>> mostraTuttePrenotazioni(Pageable page) {
-		return ResponseEntity.ok(prenotazioniService.cercaTuttePrenotazioniPageble(page)) ; 
+		return new ResponseEntity(prenotazioniService.cercaTuttePrenotazioniPageble(page),HttpStatus.OK) ; 
 	}
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<PrenotazionePostazione> mostraPrenotazioneSpecifica(@PathVariable Long id) {
-		return ResponseEntity.ok(prenotazioniService.cercaPrenotazionePostazione(id)) ; 
+		return new  ResponseEntity(prenotazioniService.cercaPrenotazionePostazione(id),HttpStatus.OK) ; 
 	}
 	
 	@PostMapping()
