@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.hans.model.Edificio;
 import com.hans.model.PrenotazionePostazione;
-import java.util.List;
 
 
 @Repository

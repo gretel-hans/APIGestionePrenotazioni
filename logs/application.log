@@ -1376,3 +1376,93 @@
 19:34:45.050 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Started ApiGestionePrenotazioniApplication in 2.937 seconds (process running for 405.259)
 19:34:45.671 [restartedMain] ERROR c.h.s.PrenotazionePostazioneService - ERRORE! Tazio non puoi prenotare nella data: 2023-10-18 hai già una prenotazione! O la postazione risulta già prenotata il: 2023-10-18
 19:34:45.753 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+19:35:54.276 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+19:35:54.306 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+19:35:54.345 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:35:54.348 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+19:35:54.351 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+19:35:54.577 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Starting ApiGestionePrenotazioniApplication using Java 17.0.7 with PID 13987 (/Users/hanseladjei/eclipse-workspace/APIGestionePrenotazioni/target/classes started by hanseladjei in /Users/hanseladjei/eclipse-workspace/APIGestionePrenotazioni)
+19:35:54.578 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - No active profile set, falling back to 1 default profile: "default"
+19:35:54.773 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:35:54.795 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 8 JPA repository interfaces.
+19:35:54.924 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:35:54.925 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:35:54.925 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+19:35:54.935 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:35:54.935 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 351 ms
+19:35:54.960 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:35:54.965 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:35:54.965 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:35:54.968 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+19:35:55.015 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@3db37433
+19:35:55.015 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+19:35:55.026 [restartedMain] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7d569d58
+19:35:55.044 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:35:55.121 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:35:55.175 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:35:55.308 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:35:55.391 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:35:55.406 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:35:55.412 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Started ApiGestionePrenotazioniApplication in 0.895 seconds (process running for 475.622)
+19:35:55.905 [restartedMain] ERROR c.h.s.PrenotazionePostazioneService - ERRORE! Tazio non puoi prenotare nella data: 2023-10-18 hai già una prenotazione! O la postazione risulta già prenotata il: 2023-10-18
+19:35:55.971 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+19:36:03.896 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+19:36:03.932 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+19:36:03.957 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:36:03.959 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+19:36:03.963 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+19:36:04.138 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Starting ApiGestionePrenotazioniApplication using Java 17.0.7 with PID 13987 (/Users/hanseladjei/eclipse-workspace/APIGestionePrenotazioni/target/classes started by hanseladjei in /Users/hanseladjei/eclipse-workspace/APIGestionePrenotazioni)
+19:36:04.139 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - No active profile set, falling back to 1 default profile: "default"
+19:36:04.358 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:36:04.374 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 8 JPA repository interfaces.
+19:36:04.485 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:36:04.489 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:36:04.493 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+19:36:04.564 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:36:04.566 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 422 ms
+19:36:04.608 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:36:04.613 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:36:04.614 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:36:04.615 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+19:36:04.662 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@56404a1e
+19:36:04.664 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+19:36:04.667 [restartedMain] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@1322afa4
+19:36:04.690 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:36:04.785 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:36:04.841 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:36:05.011 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:36:05.082 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:36:05.091 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:36:05.096 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Started ApiGestionePrenotazioniApplication in 1.008 seconds (process running for 485.305)
+19:36:05.418 [restartedMain] ERROR c.h.s.PrenotazionePostazioneService - ERRORE! Tazio non puoi prenotare nella data: 2023-10-18 hai già una prenotazione! O la postazione risulta già prenotata il: 2023-10-18
+19:36:05.446 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+19:36:10.558 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+19:36:10.573 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+19:36:10.585 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:36:10.587 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+19:36:10.595 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+19:36:10.808 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Starting ApiGestionePrenotazioniApplication using Java 17.0.7 with PID 13987 (/Users/hanseladjei/eclipse-workspace/APIGestionePrenotazioni/target/classes started by hanseladjei in /Users/hanseladjei/eclipse-workspace/APIGestionePrenotazioni)
+19:36:10.811 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - No active profile set, falling back to 1 default profile: "default"
+19:36:10.936 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:36:10.953 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 8 JPA repository interfaces.
+19:36:11.051 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:36:11.053 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:36:11.053 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+19:36:11.062 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:36:11.062 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 245 ms
+19:36:11.086 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:36:11.092 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:36:11.093 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:36:11.094 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+19:36:11.120 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@279fc960
+19:36:11.121 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+19:36:11.125 [restartedMain] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@22862996
+19:36:11.142 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+19:36:11.217 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:36:11.277 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:36:11.487 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:36:11.563 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:36:11.573 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:36:11.577 [restartedMain] INFO  c.h.ApiGestionePrenotazioniApplication - Started ApiGestionePrenotazioniApplication in 0.847 seconds (process running for 491.787)
+19:36:11.906 [restartedMain] ERROR c.h.s.PrenotazionePostazioneService - ERRORE! Tazio non puoi prenotare nella data: 2023-10-18 hai già una prenotazione! O la postazione risulta già prenotata il: 2023-10-18
+19:36:11.924 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
