@@ -8,9 +8,13 @@ import org.springframework.stereotype.Repository;
 
 import com.hans.model.Edificio;
 import com.hans.model.PrenotazionePostazione;
+import java.util.List;
+
 
 @Repository
 public interface PrenotazionePostazioneRepository extends JpaRepository<PrenotazionePostazione, Long>{
 	@Query("SELECT COUNT(*) FROM PrenotazionePostazione p WHERE p.postazione.edificio= :e AND p.dataPrenotazione BETWEEN :data1 AND :data2")
 	public int cercaNumeroPrenotazioniAziendaInData(Edificio e, LocalDate data1, LocalDate data2);
+	
+	
 }

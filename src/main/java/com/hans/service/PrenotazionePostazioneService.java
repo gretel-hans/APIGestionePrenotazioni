@@ -9,16 +9,24 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.hans.model.Edificio;
 import com.hans.model.PrenotazionePostazione;
 import com.hans.repository.PrenotazionePostazioneRepository;
+import com.hans.repository.PrenotazioniPagebleRepository;
+
+import jakarta.persistence.EntityExistsException;
 
 @Service
 public class PrenotazionePostazioneService {
  
+	@Autowired PrenotazioniPagebleRepository repoPage;
+	
 	@Autowired PrenotazionePostazioneRepository db;
+	
 	@Autowired @Qualifier("NuovaPrenotazione") ObjectProvider<PrenotazionePostazione> nuovaPrenotazione;
 	Logger log=LoggerFactory.getLogger(PrenotazionePostazioneService.class);
 	
@@ -54,11 +62,18 @@ public class PrenotazionePostazioneService {
 	}
 	
 	public PrenotazionePostazione cercaPrenotazionePostazione(long id) {
+		if(!esistePrenotazione(id)) {
+			throw new EntityExistsException("Prenotazione inesistente!!");
+		}else
 		return db.findById(id).get();
 	}
 	
 	public List<PrenotazionePostazione> cercaTuttePrenotazioni(){
 		return db.findAll();
+	}
+	
+	public Page<PrenotazionePostazione> cercaTuttePrenotazioniPageble(Pageable pageable){
+		return repoPage.findAll(pageable);
 	}
 
 	public void cercaNumeroPrenotazioniAziendaInData (Edificio e, LocalDate data1, LocalDate data2) {
@@ -68,5 +83,21 @@ public class PrenotazionePostazioneService {
 		}else if(n>0) {
 			System.out.println(e.getNome()+" ha: "+n+" prenotazioni di postazione dal "+data1+ " al "+data2);
 		}
+	}
+	
+	public String cancellaPrenotazione(Long id) {
+		if(!esistePrenotazione(id)) {
+			throw new EntityExistsException("Prenotazione inesistente!!");
+		}else
+			db.deleteById(id);
+			return "Prenotazione con id: "+id+" eliminato con successo!";			
+	}
+	
+	
+	public boolean esistePrenotazione(Long id) {
+		if(db.existsById(id)) {
+			return true;
+		}else
+			return false;
 	}
 }
