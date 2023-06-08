@@ -46,7 +46,7 @@ public class PrenotazionePostazioneService {
 		});
 		if(giaPrenotato==false) {
 			if(ChronoUnit.DAYS.between(p.getDataAttualePrenotazione(), p.getDataPrenotazione()) >2 ) {
-				System.out.println("ERRORE PRENOTAZIONE!!!"+p.getUtente().getNome()+" "+p.getUtente().getCognome()+" non puoi prenotare a più di due giorni dalla data scelta come quella della prenotazione della postazione!!");
+				System.out.println("ERRORE PRENOTAZIONE!!!"+p.getUtente().getNome()+" "+" non puoi prenotare a più di due giorni dalla data scelta come quella della prenotazione della postazione!!");
 				return false;
 			}else if(ChronoUnit.DAYS.between(p.getDataAttualePrenotazione(), p.getDataPrenotazione()) <=2)
 			{

@@ -40,7 +40,7 @@ public class UtenteService {
 		giaEsistente=false;
 		listaU.forEach(u->{
 			//System.out.println("111111 Cognome: "+u.getCognome() + utente.getCognome()+"\n Nome: "+ u.getNome() + utente.getNome()+"\n Email: " +u.getEmail() + utente.getEmail() );
-			if( u.getCognome().equals(utente.getCognome()) && u.getNome().equals(utente.getNome()) && u.getEmail().equals(utente.getEmail()) && u.getUsername().equals(utente.getUsername()) ) {
+			if( u.getNome().equals(utente.getNome()) && u.getEmail().equals(utente.getEmail()) && u.getUsername().equals(utente.getUsername()) ) {
 				giaEsistente=true;
 				//System.out.println("Cognome: "+u.getCognome() + utente.getCognome()+"\n Nome: "+ u.getNome() + utente.getNome()+"\n Email: " +u.getEmail() + utente.getEmail() );
 				throw new EntityNotFoundException("ERRORE!! L'utente inserito è già esistente!!");

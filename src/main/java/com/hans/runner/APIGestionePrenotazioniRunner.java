@@ -37,6 +37,12 @@ public class APIGestionePrenotazioniRunner implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 
+		
+		
+		
+		
+		
+		
 		// CREAZIONE UTENTI
 		for (int i = 0; i < 20; i++) {
 			Utente u = utenteService.creaUtente();

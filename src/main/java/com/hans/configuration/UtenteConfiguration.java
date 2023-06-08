@@ -18,8 +18,7 @@ public class UtenteConfiguration {
 		Faker fake= Faker.instance(new Locale("it-IT"));
 		Utente fakeUtente=new Utente();
 		fakeUtente.setNome(fake.name().firstName());
-		fakeUtente.setCognome(fake.name().lastName());
-		fakeUtente.setUsername(fakeUtente.getNome().toLowerCase()+"."+fakeUtente.getCognome().toLowerCase());
+		fakeUtente.setUsername(fakeUtente.getNome().toLowerCase());
 		fakeUtente.setEmail(fakeUtente.getUsername()+"@icloud.com");
 		return fakeUtente;
 	}
