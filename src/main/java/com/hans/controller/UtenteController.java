@@ -48,13 +48,13 @@ public class UtenteController {
 	}
 	
 	@PostMapping()
-	@PreAuthorize("hasRole('ADMIN')")
+	
 	public ResponseEntity<Utente> creaUtente(@RequestBody Utente u) {
 		return new ResponseEntity(utenteDb.salvaOModificaUtente(u) ,HttpStatus.OK);
 	}
 	
 	@DeleteMapping("/{id}")
-	@PreAuthorize("hasRole('ADMIN')")
+	
 	public ResponseEntity<String> eliminaUtente(@PathVariable Long id) {
 		return new ResponseEntity("Non si possono eliminare gli utenti in quanto legati al registro delle prenotazioni delle postazioni!" ,HttpStatus.BAD_REQUEST);
 	}
